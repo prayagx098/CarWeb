@@ -9,3 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("navbar");
+    const toggler = document.querySelector(".navbar-toggler");
+
+    toggler.addEventListener("click", function() {
+        navbar.classList.toggle("active");
+    });
+});
