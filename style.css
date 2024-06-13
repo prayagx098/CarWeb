@@ -72,6 +72,15 @@ nav {
     margin-top: 20px;
 }
 
+#bt1{
+    border-radius: 400px;
+    margin-left: 20%;
+
+}
+
+#bt1:hover{
+    transform: scale(105%);
+}
 
 .two{
     background-color: rgba(247, 239, 239, 0);
@@ -98,6 +107,19 @@ nav {
 
 
 
+.hidden {
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 
 #h2o{
@@ -109,6 +131,7 @@ nav {
     background-color: rgb(243, 180, 63);
     border: 3px inset;
     width: 300px;
+    transition: 0.3s, padding 0.3s;
     
 
 
@@ -141,7 +164,7 @@ content: "";
     left: 5%;
 }
 #h1d{
-margin-left: 200px;
+margin-left: 30%;
 margin-top: 20px;
 }
 
@@ -177,4 +200,74 @@ margin-top: 20px;
     }
     #c2:hover .card-body{
         opacity: 1;
+    }
+
+
+    #h3o{
+        background-color: rgb(243, 180, 63);
+        width: 100%;
+        color:white;
+        padding: 7px;
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    .heading{
+        margin-left:100px ;
+    }
+    #btn2{
+        justify-content: center;
+        width: 210px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 300px;
+        border-radius: 25px;
+        margin-top: 20px;
+        border-radius: inset 2px white;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    #btn2:hover{
+        transform: scale(105.1%);
+    }
+    #c3{
+       border: 2px inset;
+       bottom: 2px 2px 5px;
+    }
+   #num{
+    font-size: 100px;
+    font-weight:bolder;
+    color: rgba(243, 208, 37, 0.911);
+    text-align: center;
+   }
+   #c3 p{
+    text-align:justify;
+   }
+  #c3 #num::before{
+    content: "";
+    }
+    #ovr{
+        
+        padding: 5px;
+        flex-direction: column;
+        position: absolute;
+        top:64px;
+        color: rgba(0, 0, 0, 0.748);
+        
+        
+    }
+    #ctr{
+        background-color: aliceblue;
+    }
+    #ifr{
+        width: 100%;
+        margin-top: 20px;
+    }
+    th{
+        width: 33%;
+        padding: 20px;
+        margin: 10px;
     }
